@@ -156,7 +156,7 @@ void NeuroRacerTeleop::joyCallback(const sensor_msgs::Joy::ConstPtr& joy) {
 
 	// ESC regulieren
 	if (throttleInitialized == true) {
-		vel.linear.x = l_scale_*joy->axes[linear_];
+		vel.linear.x = l_scale_*joy->axes[rightTriggerIndex];
 	} else {
 		vel.linear.x = l_scale_*0.0;
 	}
