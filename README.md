@@ -17,7 +17,7 @@ steps:
 2. run `sudo chmod 666 /dev/<your_tty>` to make the port available
 3. `optional:` But worth the effort. Uninstall the Ubuntu modemmanager 
 (`sudo apt-get purge modemmanager`) since it keeps locking up usb connections
-4. now flash the sketch to the Arduino. **Important: write down the choose baudrate (9600 - 115200) its needed later**
+4. now flash the sketch to the Arduino. **Important: write down the choosen baudrate (9600 - 115200) its needed later**
 5. After the flash ended sucessfully, its time to connect the Arduino with ROS. For that purpose, three terminals are needed. 
 The following commands need to be execeuted in this order, to run the Node:
   1.`roscore` to boot ros and initialize the system
