@@ -43,7 +43,7 @@
         # Wenn der DeadmanButton gedrueckt ist, werden die Joystickdaten gelesen
         if (data.buttons[0] == 1):
             twist.linear.x = 4*data.axes[1]
-            twist.angular.z = 4*data.axes[0]
+            twist.angular.z = 4*data.axes[4]
         # Ansonsten wird das Auto gestoppt
         else:
             twist.linear.x = 0.0
