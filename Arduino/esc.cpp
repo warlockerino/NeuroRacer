@@ -1,10 +1,4 @@
-/*
-  Arduino ROS node for JetsonCar project
-  The Arduino controls a TRAXXAS Rally Car
-  MIT License
-  JetsonHacks (2016)
-*/
-
+// kompatibilitaetsimport fuer diverse Boards
 #if defined(ARDUINO) && ARDUINO >= 100
   #include "Arduino.h"
 #else
@@ -122,5 +116,5 @@ void loop(){
   nodeHandle.spinOnce();
   // hoehere Delays lassen weniger Signale in der Sekunde zu, aber bricht nach 1ms die Servobewegung ab.
   // ggf hoeheren Wert nutzen
-  delay(1);
+  delay(15);
 }
